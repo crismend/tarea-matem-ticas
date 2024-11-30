@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adivino tu Edad</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Juego Matemático</h1>
+        <form id="gameForm" onsubmit="handleSubmit(event)">
+            <div id="questions">
+                <div class="question active" id="step1">
+                    <p>1. Multiplica tu edad por 2 y escribe el resultado:</p>
+                    <input type="number" id="step1-input" required />
+                </div>
+                <div class="question" id="step2">
+                    <p>2. Súmale 3 al resultado anterior y escribe el resultado:</p>
+                    <input type="number" id="step2-input" disabled />
+                </div>
+                <div class="question" id="step3">
+                    <p>3. Multiplica el resultado anterior por 5 y escribe el resultado:</p>
+                    <input type="number" id="step3-input" disabled />
+                </div>
+                <div class="question" id="step4">
+                    <p>4. Réstale 6 al resultado anterior y escribe el resultado:</p>
+                    <input type="number" id="step4-input" disabled />
+                </div>
+            </div>
+            <button type="submit">Siguiente</button>
+        </form>
+        <div class="result" id="result">
+            <h2>¡Tu edad es: <span id="final-age"></span>!</h2>
+        </div>
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+
+</html>
