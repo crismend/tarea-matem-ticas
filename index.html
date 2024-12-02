@@ -5,35 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Adivino tu Edad</title>
+    <title>I guess your age</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Juego Matemático</h1>
+        <h1>Math trick</h1>
         <form id="gameForm" onsubmit="handleSubmit(event)">
             <div id="questions">
                 <div class="question active" id="step1">
-                    <p>1. Multiplica tu edad por 2 y escribe el resultado:</p>
+                    <h3>First, multiply your age by two and type the result:</h3>
                     <input type="number" id="step1-input" required />
                 </div>
                 <div class="question" id="step2">
-                    <p>2. Súmale 3 al resultado anterior y escribe el resultado:</p>
+                    <h3>Second, add three to the previus result and type the new result:</h3>
                     <input type="number" id="step2-input" disabled />
                 </div>
                 <div class="question" id="step3">
-                    <p>3. Multiplica el resultado anterior por 5 y escribe el resultado:</p>
+                    <h3>third, multiply the previus result by five and type the new result:</h3>
                     <input type="number" id="step3-input" disabled />
                 </div>
                 <div class="question" id="step4">
-                    <p>4. Réstale 6 al resultado anterior y escribe el resultado:</p>
+                    <h3>and last, subtract six to the previus result and type the new one:</h3>
                     <input type="number" id="step4-input" disabled />
                 </div>
             </div>
-            <button type="submit">Siguiente</button>
+            <button type="submit">Next</button>
         </form>
         <div class="result" id="result">
-            <h2>¡Tu edad es: <span id="final-age"></span>!</h2>
+            <h2>You Are <span id="final-age"></span> years old!</h2>
         </div>
     </div>
 
